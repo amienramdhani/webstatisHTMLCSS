@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  background-color: #7fbcd2;
+  color: #ffeeaf;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul,
+li {
+  display: inline-block;
+  padding: 15px;
+}
+
+nav a {
+  font-size: 23px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffeeaf;
+}
+
+nav a:hover {
+  color: #e1ffee;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  top: 0;
+}
+.container-dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.container-dashboard img {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.dashboard-content {
+  height: 550px;
+  width: 100%;
+}
+.header-title {
+  font-size: 50px;
+  color: #7fbcd2;
+  margin-top: 20px;
+}
+.dashboard-content p {
+  color: #7fbcd2;
+  font-size: 23px;
+  margin-top: 80px;
+}
+.btn-buy {
+  margin: 80px 0 0 0;
+  font-size: 23px;
+  color: #ffeeaf;
+  background-color: #7fbcd2;
+  border: 1px solid #7fbcd2;
+  width: 250px;
+  height: 70px;
+  border-radius: 20px;
+}
+.btn-buy:hover {
+  font-weight: bold;
+}
+
+/* bagian flex card 3 */
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  top: 0;
+}
+.flex-container-row {
+  display: flex;
+}
+.card-image {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  height: 580px;
+  width: 100%;
+  padding: 15px;
+  margin-right: 25px;
+  margin-top: 30px;
+}
+.card-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-image h2 {
+  color: #7fbcd2;
+  margin: 15px;
+}
+.card-image p,
+h3 {
+  margin: 15px;
+}
+
+.btn-cat {
+  float: right;
+  height: 40px;
+  width: 150px;
+  border-radius: 30px;
+  background-color: #7fbcd2;
+  border: 1px solid #7fbcd2;
+  color: #ffeeaf;
+  font-size: 16px;
+}
+
+.btn-cat:hover {
+  font-weight: bold;
+}
+
+/* Bagian konten */
+#content {
+  float: left;
+  width: 70%;
+}
+
+.card {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.flex-article-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.flex-article-row {
+  display: flex;
+}
+
+.flex-article-row img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flex-article-row h2 {
+  color: #7fbcd2;
+}
+
+.flex-article-row p {
+  margin-top: 20px;
+}
+aside {
+  display: flex;
+  padding: 30px;
+}
+
+section img {
+  height: 280px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+section p {
+  padding: 5px;
+}
+.card-aside {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 35px;
+}
+footer {
+  padding: 20px;
+  color: #ffeeaf;
+  background-color: #7fbcd2;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  .navbar .container-item {
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .image-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .container-dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-buy {
+    width: 200px;
+    height: 60px;
+  }
+
+  .flex-container-row {
+    flex-direction: column;
+  }
+  .flex-container-row img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .card-image {
+    height: 580px;
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .flex-article-row {
+    flex-direction: column;
+  }
+  .flex-article-row img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 10;
+  }
+}
